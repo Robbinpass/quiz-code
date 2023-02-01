@@ -10,17 +10,32 @@
     <header>
         <div id="header">
            <a id="hscores" href="hscores.html">Click To View High Scores</a>
-           <h2 id="timer"></h2>
+           <p id="timer"><span class="timer">Time: 0</span></p>
+           
         </div>
     </header>
 
-    <div class="container">
-        <h1>Coding Quiz Challenge</h1>
-        <p>Try to answer the following code-related questions within the time limit.  Keep in mind that incorrect answers will penalize your time by ten seconds!</p>
-        <button class="startbtn" type="submit">Start Quiz!</button>
+    <main class="container">
+        <div>
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit.  Keep in mind that incorrect answers will penalize your time by ten seconds!</p>
+            <button class="startgamebtn" type="submit">Start Quiz!</button>
+        </div>   
+
+        <div id="questions">
+            <h1 id="questiontxt"></h1>
+            <figure class="answer-buttons">
+                <button class="answers" id="answera"></button>
+                <button class="answers" id="answerb"></button>
+                <button class="answers" id="answerc"></button>
+                <button class="answers" id="answerd"></button>
+
+            </figure>
+        </div>>
+
         
 
-    </div>
+    </main>
      
     
 
