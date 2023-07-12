@@ -4,55 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-
-    <title>JavaScript Quiz</title>
+    <!-- CSS style & reset links -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Code quiz</title>
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <div id="scores" class="button">Best scores</div>
+        <div id=timeLeft></div>
+    </header>
+    <main>
+        <!-- Quiz container that appends or removes infomation dynamically -->
+        <div id="quiz-container">            
 
-    <div id="startWrapper">
-
-        <h1>Test your JavaScript knowledge!</h1>
-        <h2>Click "Start" to begin the quiz.</h2>
-        <button id="start">START</button>
-        <a id="viewHighScores" href="#">View High Scores</a>
-
-    </div>
-
-    <div id="quizWrapper" style = "display: none">
-
-        <h1>JavaScript Quiz</h1>
-
-        <div id="timerWrapper">
-            <div id="timer"></div>
-        </div>
-
-        <p id="question"></p>
-
-        <div id="answersWrapper">
-            <button class="answerButton" id="answer1" onclick="checkAnswer('1')"></button>
-            <button class="answerButton" id="answer2" onclick="checkAnswer('2')"></button>
-            <button class="answerButton" id="answer3" onclick="checkAnswer('3')"></button>
-            <button class="answerButton" id="answer4" onclick="checkAnswer('4')"></button>
-        </div>
-
-    </div>
-
-    <div id="scoreWrapper" style = "display: none">
-        <h1>Score History</h1>
-        <ul class="finale" id="initials">Initials: </ul>
-        <ul class="finale" id="score">Score: </ul>
-        <div id="scoreButtonWrapper">
-            <button class="scoreButton" id="startOver">Try Again</button>
-            <button class="scoreButton" id="clearScores">Clear Scores</button>
-        </div>
-    </div>
-
-
-
-
-
-    <script src="./assets/script.js"></script>
-    
+        </div>        
+    </main>
+    <!--  questions array source -->
+    <script src="./assets/js/questions.js"></script>
+    <!-- Global Variable Source -->
+    <script src="./assets/js/variables.js"></script>
+    <!-- Main script -->
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
