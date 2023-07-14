@@ -1,4 +1,4 @@
-/**
+/*
  * The following script will do the following
  * Dynamically populate or reset all variables
  * Read and write to local storage
